@@ -1,0 +1,4 @@
+#! /usr/bin/env node
+import i from"yargs";import{hideBin as l}from"yargs/helpers";import s from"chalk";import n from"inquirer";var t=i(l(process.argv)).argv;process.on("SIGINT",()=>{console.log(s.redBright.bold(`
+ Process interrupted (Ctrl+C)`)),process.exit(0)});async function c(){t._[0]=="init"?p():console.log(s.red("Invalid command"))}async function p(){let e=t._[1],o=t._[2],a=t._[3];e||(e=(await n.prompt([{type:"input",name:"projectName",message:"What is your project name?"}])).projectName),o||(o=(await n.prompt([{type:"list",name:"template",message:"What template would you like to use?",choices:["Scaffold (BareBones)","Todolist (CRUD)","Production Backend"]}])).template),a||(a=(await n.prompt([{type:"confirm",name:"installDependencies",message:"Would you like to install dependencies?",default:!0}])).installDependencies),console.log(`Creating project ${e} with template ${o}`)}await c();
+//# sourceMappingURL=index.js.map

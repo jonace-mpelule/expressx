@@ -1,0 +1,26 @@
+{
+  "name": "expressx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/chalk": "^0.4.31",
+    "@types/yargs": "^17.0.33",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@types/node": "^24.0.3",
+    "chalk": "^5.4.1",
+    "inquirer": "^12.6.3",
+    "nanospinner": "^1.2.2",
+    "yargs": "^18.0.0"
+  }
+}
