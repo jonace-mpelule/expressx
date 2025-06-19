@@ -1,0 +1,27 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch",
+    "dev:start": "tsup --watch --onSuccess 'npm run dev:run'",
+    "dev:run": "node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@swc/core": "^1.12.3",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.3",
+    "tsup": "^8.5.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "zod": "^3.25.67"
+  }
+}
